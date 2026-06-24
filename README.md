@@ -1,47 +1,40 @@
-Projeto TCC - SENAI
-Sobre o Projeto
-Este repositório foi criado para armazenar o desenvolvimento do Trabalho de Conclusão de Curso (TCC) do curso de Desenvolvimento de Sistemas do SENAI.
+# FoodPLM - Plataforma de Gestão
 
-O tema escolhido foi baseado nas demandas cadastradas na plataforma Saga SENAI, que tem como objetivo permitir que alunos resolvam problemas reais do mercado de trabalho.
+O **FoodPLM** é um sistema web para a gestão do ciclo de vida de produtos (PLM - Product Lifecycle Management), controle de usuários e geração de relatórios dinâmicos. A aplicação possui uma interface responsiva no front-end que consome dados diretamente de uma API estruturada no back-end.
 
-Empresa
-Senai Uberlandia
+## 🛠️ Tecnologias Utilizadas
 
-Demanda Escolhida
-Gestão Inteligente do Ciclo de Vida de Produtos
+O projeto foi desenvolvido do zero focando em desempenho e simplicidade, utilizando as linguagens nativas:
 
-### 📄 Descrição da Demanda
-A empresa enfrenta dificuldades para organizar e controlar o ciclo de vida de seus produtos, utilizando processos manuais que comprometem a agilidade e a tomada de decisão baseada em dados.
+- **Front-end:**
+  - **HTML:** Estruturação semântica das páginas, painéis, formulários e modais.
+  - **CSS:** Estilização responsiva, layout estruturado com Flexbox/Grid e uso de variáveis globais (`:root`) para consistência visual.
+  - **JavaScript :** Manipulação dinâmica do DOM, controle de fluxos de telas, gerenciamento de modais e consumo da API nativa via `Fetch API`.
 
-Benefícios Esperados
-- Reduzir o tempo entre a concepção e o lançamento de novos produtos  
-- Melhorar a organização do funil de inovação  
-- Otimizar a tomada de decisão com base em dados  
-- Centralizar informações técnicas  
+- **Back-end:**
+  - **JavaScript :** Lógica do servidor, gerenciamento das rotas da API, regras de negócio e controle de autenticação/segurança.
 
-Problemas Identificados
-Atualmente, a gestão de ideias, testes de receitas e análise de mercado é feita de forma manual, sem versionamento estruturado ou dashboards. Isso gera perda de informações, demora na aprovação e falta de indicadores para decisões estratégicas.
+- **Banco de Dados:**
+  - **MySQL:** Banco de dados relacional encarregado do armazenamento seguro, persistente e estruturado de todas as entidades do sistema (Usuários e Relatórios).
 
-Objetivo do Projeto
-Desenvolver um sistema para gestão do ciclo de vida de produtos, permitindo o controle, organização e análise de dados relacionados ao desenvolvimento de novos produtos.
+---
 
-Tecnologias Utilizadas (exemplo)
-- Java / Spring Boot ou outra linguagem escolhida  
-- Banco de Dados (MySQL ou PostgreSQL)  
-- Front-end (HTML, CSS, JavaScript)  
-- Git e GitHub  
+## 📁 Estrutura de Arquivos
 
-Funcionalidades Esperadas
-- Cadastro e gerenciamento de produtos  
-- Controle de versões  
-- Dashboards com indicadores  
-- Gestão do funil de inovação  
-- Geração de relatórios (PDF/Excel)  
+A organização do projeto separa de forma limpa as responsabilidades de interface, lógica visual e lógica de servidor:
 
-Requisitos do Sistema
-- Interface intuitiva  
-- Segurança das informações  
-- Baixo custo de manutenção  
-- Exportação de dados  
+```text
+├── recuperacao.html     # Tela de recuperação de senha do usuário
+├── Relatorios.html      # Painel de filtros, métricas e listagem de relatórios
+├── usuarios.html        # Interface de gerenciamento e listagem da equipe
+│
+├── style.CSS            # Estilos globais da aplicação e do painel principal
+├── Relatorios.css       # Layout e elementos específicos da área de relatórios
+├── Usuario.CSS          # Design dedicado ao módulo de gestão de usuários
+│
+├── app.js               # Configuração e funções de integração direta com a API local
+├── script.JS            # Comportamento do Dashboard (menus, tarefas e modais)
+├── relatorios.js        # Lógica de criação dinâmica e exportação local de relatórios (CSV)
+│
+└── server.js            # Servidor back-end em JavaScript (Node.js) e tratamento de rotas
 
-Estrutura do Repositório
