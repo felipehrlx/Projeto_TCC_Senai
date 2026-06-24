@@ -5,7 +5,7 @@ Este repositório foi criado para armazenar o desenvolvimento do Trabalho de Con
 O tema escolhido foi baseado nas demandas cadastradas na plataforma Saga SENAI, que tem como objetivo permitir que alunos resolvam problemas reais do mercado de trabalho.
 
 Empresa
-M.a.f. de Sousa & Cia. Ltda
+Senai Uberlandia
 
 Demanda Escolhida
 Gestão Inteligente do Ciclo de Vida de Produtos
